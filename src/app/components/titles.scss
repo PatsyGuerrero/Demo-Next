@@ -1,0 +1,96 @@
+@import "../sass/mixins";
+
+.h2 {
+  font-size: 44px;
+  line-height: 150%;
+  color: #121212;
+  font-weight: 400;
+  margin: 0;
+
+  & > strong {
+    font-weight: 700;
+    color: #0f62fe;
+  }
+
+  & > i {
+    font-size: inherit;
+  }
+
+  @include respond(m2) {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  @include respond(s2) {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.h3 {
+  font-size: 30px;
+  line-height: 150%;
+  color: #121212;
+  font-weight: 700;
+  margin: 0;
+
+  & > i {
+    font-size: inherit;
+  }
+
+  @include respond(m2) {
+    font-size: 24px;
+  }
+
+  @include respond(s2) {
+    font-size: 18px;
+  }
+}
+
+.h4 {
+  font-size: 24px;
+  line-height: 150%;
+  color: #121212;
+  font-weight: 700;
+  margin: 0;
+
+  & > strong {
+    font-weight: 700;
+  }
+
+  & > i {
+    font-size: inherit;
+  }
+
+  @include respond(m2) {
+    font-size: 24px;
+  }
+
+  @include respond(s2) {
+    font-size: 18px;
+  }
+}
+
+.h3Variant {
+  font-size: 24px;
+  line-height: 150%;
+  color: #121212;
+  font-weight: 700;
+  margin: 0;
+
+  & > strong {
+    font-weight: 700;
+  }
+
+  & > i {
+    font-size: inherit;
+  }
+
+  @include respond(m2) {
+    font-size: 24px;
+  }
+
+  @include respond(s2) {
+    font-size: 18px;
+  }
+}

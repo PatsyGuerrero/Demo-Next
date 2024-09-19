@@ -1,0 +1,55 @@
+@import "../sass/mixins";
+
+.articleBlog {
+  padding: 96px 0;
+  background-color: #f0f2f6;
+  @include respond(s2) {
+    padding: 48px 20px;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include respond(m2) {
+      max-width: 672px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    gap: 24px;
+
+    @include respond(m2) {
+      flex-wrap: wrap;
+    }
+
+    @include respond(s2) {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+  &__hero {
+    padding: 0px 0 0px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__verMas {
+    color: #0f62fe;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 800;
+
+    @include respond(s2) {
+      font-size: 18px;
+      letter-spacing: 0px;
+      font-weight: 400;
+    }
+  }
+}

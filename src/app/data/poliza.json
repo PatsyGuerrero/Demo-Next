@@ -1,0 +1,23 @@
+{
+    "cards": [
+        {
+            "model": "first",
+            "title": "Descubre qué es una Póliza de Inversión",
+            "paragraph": "Es un depósito a plazo fijo en donde inviertes un monto durante un plazo establecido y generas intereses.",
+            "image": "https://www.bancoguayaquil.com/static/6914ecba7374bd99d0132f5480f2ac22/82046/Cel2_1519x1519x150px.webp"
+        },
+        {
+            "model":"first",
+            "title": "La tasa de tu póliza se ajustará según el monto y plazo que elijas",
+            "paragraph": "Al contratar tu póliza 100% en línea podrás acceder a una tasa desde 6.20% hasta 8.35%",
+            "image": "https://www.bancoguayaquil.com/static/678398774a53cc5acf811febf10914c2/1a067/Frame_2087327638__1_.png"
+        },
+        {
+            "model":"first",
+            "title": "Seguimiento desde la App",
+            "paragraph": "Revisa cuánto has generado y el plazo de vencimiento de tu póliza desde tu App",
+            "image": "https://www.bancoguayaquil.com/static/b46a16aa8aae0a7f0d270703dfaa0681/82046/Cel4_1519x1519x150px.webp"
+        }
+
+    ]
+}

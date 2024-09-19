@@ -1,0 +1,20 @@
+@import "../sass/mixins";
+
+.imageComponent {
+  width: 576px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  border: 2px solid #121212 !important;
+
+  @include respond(m2) {
+    max-width: 672px;
+    width: 672px;
+  }
+
+  @include respond(s2) {
+    max-width: 100%;
+    width: 100%;
+  }
+}

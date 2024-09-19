@@ -1,0 +1,46 @@
+@import "../sass/mixins";
+
+.titleSection {
+  padding: 0px 0px 48px 0px;
+  background: none;
+
+  @include respond(m2) {
+    padding: 0px 20px 48px 20px;
+  }
+
+
+  &__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include respond(m2) {
+      display: inline;
+    }
+  }
+
+  &__title {
+    max-width: 572px;
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 24px;
+    color:  #424242;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+
+  }
+
+  line{
+    @include respond(m2) {
+      margin-bottom: 10px;
+    }
+  }
+}

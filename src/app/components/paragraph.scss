@@ -1,0 +1,226 @@
+@import "../sass/mixins";
+
+$color: #121212;
+
+.primaryParagraph {
+  color: #2B2B2B;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  display: grid;
+  gap: 10px;
+
+  @include respond(m2) {
+    font-size: 24px;
+  }
+
+  @include respond(s2) {
+    font-size: 18px;
+  }
+
+  & > p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #2B2B2B;
+
+
+    & > b {
+      font-weight: 700;
+      font-size: 24px;
+      color: #2B2B2B;
+
+      @include respond(s2) {
+        font-size: 20px;
+      }
+    }
+
+    & > strong {
+      font-weight: 700;
+      font-size: 24px;
+      color: #2B2B2B;
+
+
+      @include respond(s2) {
+        font-size: 20px;
+      }
+    }
+
+    & > b {
+      font-weight: 700;
+      font-size: 24px;
+      color: #2B2B2B;
+
+
+      @include respond(s2) {
+        font-size: 20px;
+      }
+    }
+
+    & > i {
+      font-size: inherit;
+      color: #2B2B2B;
+
+    }
+    & > a {
+      color: inherit;
+      font-size: 18px;
+
+      &:hover{
+        color: #0f62fe;
+      }
+
+      @include respond(m2) {
+        font-size: 24px;
+      }
+
+      @include respond(s2) {
+        font-size: 20px;
+      }
+    }
+
+    @include respond(m2) {
+      font-size: 20px;
+    }
+
+    @include respond(s2) {
+      font-size: 20px;
+    }
+  }
+
+  & > h2 {
+    margin: 0;
+    color: #424242;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+
+    @include respond(s2) {
+      font-size: 38px;
+      text-align: left;
+    }
+  }
+
+  & > h3 {
+    color: #424242;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 0;
+
+    @include respond(s2) {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+
+.boldParagraph {
+  & > p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: $color;
+    font-weight: 700;
+    color: #2B2B2B;
+
+  }
+}
+
+.secondaryParagraph {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #2B2B2B;
+
+  & > p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #2B2B2B;
+
+
+    & > strong {
+      font-weight: 700;
+      font-size: inherit;
+      color: #2B2B2B;
+
+    }
+
+    & > i {
+      font-size: inherit;
+      color: #2B2B2B;
+
+    }
+    & > a {
+      color: #0f62fe;
+      font-size: 24px;
+
+      @include respond(m2) {
+        font-size: 24px;
+      }
+
+      @include respond(s2) {
+        font-size: 18px;
+      }
+    }
+
+    @include respond(m2) {
+      font-size: 20px;
+    }
+
+    @include respond(s2) {
+      font-size: 20px;
+    }
+  }
+
+  & > h2 {
+    margin: 0;
+    color: #424242;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%;
+
+    @include respond(s2) {
+      font-size: 38px;
+      text-align: left;
+    }
+  }
+
+  & > h3 {
+    color: #424242;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    margin: 0;
+
+    @include respond(s2) {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+
+.tertiaryParagraph {
+  & > p {
+    color: #fff;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 57.2px */
+    margin: 0;
+  }
+}

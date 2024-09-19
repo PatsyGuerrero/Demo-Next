@@ -1,0 +1,157 @@
+@import "../sass/global";
+
+.container_button_cleo {
+  display: inline-flex;
+  color: $color-white;
+  border-radius: 8px;
+  padding: 20px 14px;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.2s;
+  
+  img {
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  @include respond(m2) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @include respond(s2) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  &.primary {
+    background-color: #0f62fe;
+    border: #0f62fe 2px solid;
+    color: white;
+    width: fit-content;
+    text-transform: uppercase;
+    
+    @include respond(s2) {
+      width: 100%;
+      letter-spacing: 2px;
+    }
+
+    &:hover {
+      background-color: #160f41;
+      color: white;
+      border: white 2px solid;
+    }
+
+    &:hover .color-svg {
+      fill: white;
+    }
+  }
+
+  &.secondary {
+    border: 2px solid #121212;
+    color: #121212;
+    width: fit-content;
+
+    @include respond(s2) {
+      width: 100%;
+      letter-spacing: 2px;
+    }
+
+    .color-svg {
+      fill: #121212;
+    }
+
+    &:hover {
+      background-color: #0f62fe;
+      color: white;
+      border: 2px solid #0f62fe;
+    }
+
+    &:hover .color-svg {
+      fill: white;
+    }
+  }
+
+  &.tertiary {
+    border: 2px solid #ed99c5;
+    color: #d0d0d0;
+
+    .color-svg {
+      fill: #d0d0d0;
+    }
+
+    &:hover {
+      background-color: #ed99c5;
+      color: white;
+      border: 2px solid #ed99c5;
+    }
+
+    &:hover .color-svg {
+      fill: white;
+    }
+  }
+
+  &.outline {
+    color: #121212;
+    width: fit-content;
+    padding: 0;
+
+    @include respond(s2) {
+      letter-spacing: 2px;
+    }
+
+    .color-svg {
+      fill: #121212;
+    }
+
+    &:hover {
+      color: #0f62fe;
+    }
+
+    &:hover .color-svg {
+      fill: #0f62fe;
+    }
+  }
+
+  &.link {
+    color: #0f62fe;
+    width: fit-content;
+    padding: 0;
+    letter-spacing: 0;
+
+    .color-svg {
+      fill: #0f62fe;
+    }
+
+    &:hover {
+      color: #121212;
+    }
+
+    &:hover .color-svg {
+      fill: #121212;
+    }
+  }
+
+  &.invisible {
+    display: none;
+    visibility:hidden
+  }
+}
+
+.container_button_cleo_second {
+  @extend .container_button_cleo;
+  width: 100%;
+}
+
+.item-icon {
+  width: 14px;
+  height: auto;
+  display: inline-flex;
+  margin-left: 8px;
+}
