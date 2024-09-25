@@ -50,8 +50,11 @@ const ProductCardFirst = ({ data }) => {
   const ImageSection = ({ data}) => {
     return (
       <div id="image" className="cardContentPrimary__section">
-   
-          { <Image data={data} className="cardContentPrimary__image" /> }
+        <video width="576" height="300" autoplay="autoplay" playsinline aria-hidden="true" muted>
+          <source src="https://videos.ctfassets.net/jhuukrkt1w7q/3najyQSTg2wIUsGxVm7L4z/7c931a401f77953a24cc701eb57b2830/metas.mp4"/>
+            Your browser does not support the video tag.
+        </video>
+          {/* { <Image data={data} className="cardContentPrimary__image" /> } */}
       </div>
     )
   }
