@@ -7,7 +7,7 @@ import Paragraph from "./paragraph"
 // import Item from "../../ui-kit/item"
 // import LinkItem from "../../ui-kit/link"
 import Image from "../components/image"
-// import { InViewObserver } from "../../../hooks/useInView"
+import { InViewObserver } from "../hooks/useInView"
 // import ButtonPrimary from "../../../components/buttons/buttonPrimary"
 import { useImageHook } from "../hooks/useImageHook"
 
@@ -105,8 +105,13 @@ const ProductCardFirst = ({ data }) => {
     // )
 
     return shouldUseImage ? (
+      <InViewObserver>
+
       <img src={mainVideo} alt="Muted Video" />
+      </InViewObserver>
     ) : (
+      <InViewObserver>
+
       <div
         ref={videoParentRef}
         dangerouslySetInnerHTML={{
@@ -124,6 +129,8 @@ const ProductCardFirst = ({ data }) => {
           </video>`
         }}
       />
+            </InViewObserver>
+
     );
   }
 
