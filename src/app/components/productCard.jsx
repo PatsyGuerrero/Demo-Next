@@ -105,12 +105,9 @@ const ProductCardFirst = ({ data }) => {
     // )
 
     return shouldUseImage ? (
-      <InViewObserver>
 
       <img src={mainVideo} alt="Muted Video" />
-      </InViewObserver>
     ) : (
-      <InViewObserver>
 
       <div
         ref={videoParentRef}
@@ -129,7 +126,6 @@ const ProductCardFirst = ({ data }) => {
           </video>`
         }}
       />
-            </InViewObserver>
 
     );
   }
